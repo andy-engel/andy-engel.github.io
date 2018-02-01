@@ -1,0 +1,39 @@
+
+.shape{
+  margin: 36px;
+  float: left;
+  background: #1EB287; /*green*/
+  height: 40px;
+  width: 40px;
+  animation-name: spinning;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+/*   animation-timing-function: 75%; */
+/*   animation-direction: alternate; */
+
+}
+/* blue: #158BC5 */
+/* red: #D25E51 */
+img {
+  float: left;
+}
+
+@keyframes spinning {
+  0%{
+/*     background: #1EB287; */
+  }
+  33.3%{
+    background: #158BC5;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(90deg);
+  }
+  66.7%{
+    background: #D25E51;
+    clip-path: circle(50% at 50% 50%);
+    transform: rotate(180deg);
+  }
+  100%{
+/*     background: #1EB287; */
+    transform: rotate(270deg);
+  }
+}
