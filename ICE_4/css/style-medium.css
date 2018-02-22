@@ -49,7 +49,7 @@
     color: #DDDDDA; /*CHANGE*/
     text-decoration: none;
     padding: .5em 1em;
-    display: block;
+    display: inline;
     text-align: center;
   }
   .menu-icon a{
@@ -57,7 +57,7 @@
     color: #DDDDDA; /*CHANGE*/
     text-decoration: none;
     padding: .5em 1em;
-    display: block;
+    display: inline;
     text-align: center;
   }
   .top-nav ul li a.current-page{
