@@ -29,7 +29,7 @@
   	padding: 0;
   	background-color: #211D24; /*CHANGE*/
   	margin: 0;
-    display: inline-block;
+    display: inline;
     text-align: center;
     position: relative;
 } */
@@ -85,7 +85,7 @@
   }
   /*implement menu toogle*/
   .top-nav.toggle-open ul{
-    display: block;
+    display: inline;
   }
 
   .home-flag{
