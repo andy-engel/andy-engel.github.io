@@ -38,7 +38,7 @@
     padding: 0;
     background-color: #211D24; /*CHANGE*/
     margin: 0;
-    display: inline;
-    position: relative;
+    display: inline-block;
+/*     position: relative; */
   }
 }
