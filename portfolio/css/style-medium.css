@@ -36,10 +36,10 @@
     }
 
   .home-flag{
-  	background-color: #17BEBB;
+  	background-color: #324E4A;
   	color: #DDDDDA;
-  	display: flex;
-  	flex-direction: column;
+  	/* display: flex;
+  	flex-direction: column; */
   	max-width: 300px;
   	margin: auto;
   	padding: 1.5em;
