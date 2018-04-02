@@ -7,9 +7,9 @@
 html {
   box-sizing: border-box;
 }
-html, body{
+/* html, body{
 	height: 100%;
-}
+} */
 /*skip content*/
 /* .skip{
 	position: absolute;
@@ -33,11 +33,10 @@ a.skip:active, a.skip:focus, a.skip:hover {
 html, body, header, footer{
     background-color: #ECECEA;
     font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
 }
 header, footer, .logo {
 	background-color: #211D24;
+  background-color: #000000;
 	color: #DDDDDA;
 }
 body{
@@ -129,8 +128,8 @@ header{
   top: 1px;
 }
 .top-nav ul li a:hover, .menu-icon a:hover, .top-nav ul li a:focus, .menu-icon a:focus{
-    background-color: #324E4A; /* color of menus hover*/
-    color: #DDDDDA;
+    background-color: #DDDDDA; /* color of menus hover*/
+    color: #324E4A;
     font-weight: bold;
 }
   .top-nav ul li a:hover:before, .top-nav ul li a:focus:before{
@@ -161,10 +160,14 @@ header{
 /*-----FOOTER-----*/
 footer{
   background-color: #324E4A;
-  color: #FFFFFF;
+  color: #DDDDDA;
+  /* display: fixed; */
+  position: relative;
+  margin-top: 0px;
 	font-size: .85em;
 	text-align: center;
 	box-shadow: 0px -10px 30px 2px rgba(141, 141, 139, .75);
+  z-index: 2;
 }
 footer p{
 	padding-top: .5em;
@@ -176,34 +179,58 @@ footer p{
 	height: 25px;
 }
 
+.content-main{
+  margin-top: 150px;
+}
+
 /*-----HOMEPAGE-----*/
+.content-wrap {
+  background-color: yellow;
+}
+.main-section{
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+
+.main-image{
+  background-image: url("../img/bgSmall.jpg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
 /* .main-content-home{
 	margin-top: 250px; */
 /* } */
 
 #main-content{
-    background-image: url("../img/bgSmall.jpg");
+    background-color: purple;
+    /* background-image: url("../img/bgSmall.jpg"); */
     /* background-size: 100vh 100vw; */
-    background-image: center;
+    /* background-image: center;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: 80%;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    right: 0px;
+    background-repeat: no-repeat; */
+    /* background-size: 80%; */
+    /* height: 100vh;
+    width: 100vh; */
+    /* position: absolute; */
+    /* right: 0px; */
 }
 
-.home-flag{
+#main-text{
 	background-color: #324E4A;
 	color: #DDDDDA;
 	display: flex;
+  /* margin-top: 250px ; */
 	/* flex-direction: column; */
-	max-width: 300px;
+	/* max-width: 50vw; */
 	margin: auto;
 	padding: 1.5em;
 	box-shadow: 0px 8px 10px gray, -10px 8px 15px gray, 10px 8px 15px gray;
+
 }
+
+
+
 
 /*-----IMAGES PAGE ------*/
 /* .main-content-crafts{
@@ -216,6 +243,7 @@ footer p{
   /* grid-template-columns: repeat(3, 1fr); */
   grid-template-columns: auto auto;
   grid-gap: 10px;
+  /* margin-top: 125px; */
 }
 /* this was the old way
 .photo-grid {
@@ -232,7 +260,7 @@ footer p{
 	max-width: 1200px;
 }
 .photo-cell{
-	margin-bottom: 2%;
+	margin-bottom: 4%;
 	margin-left: 2%;
 }
 .photo-cell img {
@@ -242,6 +270,23 @@ footer p{
   	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
 }
 
-#photo-caption {
-  padding: 20px;
+.photo-caption {
+  padding: 10px;
+}
+
+/*-----ABOUT PAGE ------*/
+.resume-section{
+  margin-top: 10em;
+}
+.resume-element {
+  padding: .5em;
+}
+.main-text h1 {
+  margin-top: 10px;
+}
+
+
+/*-----CONTACTS PAGE ------*/
+.photo-cell p {
+  margin: 25px auto;
 }
