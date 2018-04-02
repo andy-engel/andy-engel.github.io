@@ -52,6 +52,12 @@ p{
 h1{
 	font-size: 1.75em;
 }
+
+#welcome {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
 h2{
 	font-size: 1.5em;
 }
@@ -163,7 +169,8 @@ footer{
   color: #DDDDDA;
   /* display: fixed; */
   position: relative;
-  margin-top: 0px;
+  /* margin-top: 2em; */
+  padding: 2em;
 	font-size: .85em;
 	text-align: center;
 	box-shadow: 0px -10px 30px 2px rgba(141, 141, 139, .75);
@@ -184,12 +191,14 @@ footer p{
 }
 
 /*-----HOMEPAGE-----*/
-.content-wrap {
+/* .content-wrap {
   background-color: yellow;
-}
+} */
+/* this one is for visually testing the 3 sizes */
+
 .main-section{
   margin-top: 10em;
-  margin-bottom: 10em;
+  margin-bottom: 5em;
 }
 
 .main-image{
@@ -219,13 +228,15 @@ footer p{
 #main-text{
 	background-color: #324E4A;
 	color: #DDDDDA;
-	display: flex;
+  /* opacity: .5; */
+  padding: 10px;
+	/* display: flex; */
   /* margin-top: 250px ; */
 	/* flex-direction: column; */
 	/* max-width: 50vw; */
-	margin: auto;
+	/* margin: auto;
 	padding: 1.5em;
-	box-shadow: 0px 8px 10px gray, -10px 8px 15px gray, 10px 8px 15px gray;
+	box-shadow: 0px 8px 10px gray, -10px 8px 15px gray, 10px 8px 15px gray; */
 
 }
 

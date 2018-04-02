@@ -24,9 +24,10 @@
 
 
     /*-----HOMEPAGE-----*/
-    .content-wrap {
+    /* .content-wrap {
       background-color: red;
-    }
+    } */
+    /* this one is for visually testing the 3 sizes */
 
     #main-content{
         background-color: pink;
