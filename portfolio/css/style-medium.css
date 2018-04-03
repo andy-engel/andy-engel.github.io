@@ -15,7 +15,10 @@
 
 
   /*mobile-first*/
-
+  .top-nav ul li, .menu-icon{
+  	border-top: 1px solid #DDDDDA; /*CHANGE*/
+    display: inline-block;
+  }
 
   /*-----LOGO-----*/
 
@@ -31,7 +34,11 @@
 
   /* .main-content-home{
   	margin-top: 250px;*/
-  }
+
+    .main-section{
+      margin-top: 10em;
+      margin-bottom: 5em;
+    }
 
   #main-content {
       background-color: lightblue;

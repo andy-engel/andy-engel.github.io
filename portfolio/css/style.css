@@ -103,7 +103,7 @@ header{
 }
 .top-nav ul li, .menu-icon{
 	border-top: 1px solid #DDDDDA; /*CHANGE*/
-  display: inline-block;
+  display: block;
 }
 .top-nav ul li a{
 	font-size: 1em;
@@ -197,7 +197,7 @@ footer p{
 /* this one is for visually testing the 3 sizes */
 
 .main-section{
-  margin-top: 10em;
+  margin-top: 15em;
   margin-bottom: 5em;
 }
 
@@ -283,6 +283,12 @@ footer p{
 
 .photo-caption {
   padding: 10px;
+}
+
+#subHead {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 50px;
 }
 
 /*-----ABOUT PAGE ------*/
