@@ -252,7 +252,7 @@ footer p{
 .art-wrapper {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
-  grid-template-columns: auto auto;
+  grid-template-columns: auto ;
   grid-gap: 10px;
   /* margin-top: 125px; */
 }
@@ -292,11 +292,19 @@ footer p{
 }
 
 /*-----ABOUT PAGE ------*/
+#colorBar{
+  background-color: #418B80;
+}
+
+.resume-section-top{
+  margin-top: 15em;
+}
 .resume-section{
-  margin-top: 10em;
+  margin-top: 1em;
 }
 .resume-element {
   padding: .5em;
+
 }
 .main-text h1 {
   margin-top: 10px;
