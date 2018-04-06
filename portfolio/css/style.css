@@ -7,29 +7,6 @@
 html {
   box-sizing: border-box;
 }
-/* html, body{
-	height: 100%;
-} */
-/*skip content*/
-/* .skip{
-	position: absolute;
-	left: -999px;
-	top: auto;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	z-index: -999;
-	color: #E3AD02;
-}
-a.skip:active, a.skip:focus, a.skip:hover {
-    position:fixed;
-    top: auto;
-    left: auto;
-	width: auto;
-	height: auto;
-	overflow: visible;
-	z-index: 999;
-} */
 html, body, header, footer{
     background-color: #ECECEA;
     font-family: 'Open Sans', sans-serif;
@@ -41,23 +18,21 @@ header, footer, .logo {
 }
 body{
 	display: grid;
-	/* flex-direction: column; */
 }
 h1, h2, h3, h4, h5, h6{
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 p{
 	font-family: 'Open Sans', sans-serif;
+  margin: 20px auto;
 }
 h1{
 	font-size: 1.75em;
 }
-
-#welcome {
+.welcome {
   text-align: center;
   padding-bottom: 1em;
 }
-
 h2{
 	font-size: 1.5em;
 }
@@ -73,19 +48,18 @@ h5{
 h6{
 	font-size: .75em;
 }
-.main-content{
-	flex: 1 0 auto;
-	margin-top: 110px;
-}
-.about, .work, .crafts, .contact{
+.about, .work, .contact{
 	margin: auto;
 	padding-right: 3%;
 	padding-left: 3%;
 }
+.link{
+  color: #FFFFFF;
+}
 
 /*-----HEADER & NAVIGATION-----*/
 header{
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 105%;
     box-shadow: 0px 18px 26px 1px rgba(141, 141, 139, .75);
     width: 100%;
@@ -102,12 +76,12 @@ header{
 	display: block;
 }
 .top-nav ul li, .menu-icon{
-	border-top: 1px solid #DDDDDA; /*CHANGE*/
+	border-top: 1px solid #DDDDDA;
   display: block;
 }
 .top-nav ul li a{
 	font-size: 1em;
-	color: #DDDDDA; /*CHANGE*/
+	color: #DDDDDA;
 	text-decoration: none;
 	padding: .5em 1em;
 	display: block;
@@ -127,7 +101,6 @@ header{
 	font-weight: bold;
 }
 .top-nav ul li a.current-page:before {
-  /* content: "\27A4  "; */
   color: #DFE0E1;
   padding-right: 4px;
   position: relative;
@@ -139,18 +112,14 @@ header{
     font-weight: bold;
 }
   .top-nav ul li a:hover:before, .top-nav ul li a:focus:before{
-      /* content: "\27A4  "; */
     	color: #DDDDDA;
     	padding-right: 4px;
     	position: relative;
     	top: 1px;
 }
-/*implement menu toogle*/
 .top-nav.toggle-open ul{
 	display: block;
 }
-
-
 
 /*-----LOGO-----*/
 .logo{
@@ -167,9 +136,7 @@ header{
 footer{
   background-color: #324E4A;
   color: #DDDDDA;
-  /* display: fixed; */
   position: relative;
-  /* margin-top: 2em; */
   padding: 2em;
 	font-size: .85em;
 	text-align: center;
@@ -180,91 +147,40 @@ footer p{
 	padding-top: .5em;
 	padding-bottom: .75em;
 }
-
 .icon{
 	padding: .5em .25em 0;
 	height: 25px;
 }
-
 .content-main{
   margin-top: 150px;
 }
 
 /*-----HOMEPAGE-----*/
-/* .content-wrap {
-  background-color: yellow;
-} */
-/* this one is for visually testing the 3 sizes */
 
 .main-section{
   margin-top: 15em;
   margin-bottom: 5em;
 }
-
 .main-image{
   background-image: url("../img/bgSmall.jpg");
   background-size: 50%;
   background-repeat: no-repeat;
 }
 
-/* .main-content-home{
-	margin-top: 250px; */
-/* } */
-
-#main-content{
-    background-color: purple;
-    /* background-image: url("../img/bgSmall.jpg"); */
-    /* background-size: 100vh 100vw; */
-    /* background-image: center;
-    background-position: center;
-    background-repeat: no-repeat; */
-    /* background-size: 80%; */
-    /* height: 100vh;
-    width: 100vh; */
-    /* position: absolute; */
-    /* right: 0px; */
-}
-
-#main-text{
+.main-text{
 	background-color: #324E4A;
 	color: #DDDDDA;
-  /* opacity: .5; */
   padding: 10px;
-	/* display: flex; */
-  /* margin-top: 250px ; */
-	/* flex-direction: column; */
-	/* max-width: 50vw; */
-	/* margin: auto;
-	padding: 1.5em;
-	box-shadow: 0px 8px 10px gray, -10px 8px 15px gray, 10px 8px 15px gray; */
-
 }
-
-
 
 
 /*-----IMAGES PAGE ------*/
-/* .main-content-crafts{
-	/* margin-top: 250px;
-} */
-/*photo gallery*/
 
 .art-wrapper {
   display: grid;
-  /* grid-template-columns: repeat(3, 1fr); */
   grid-template-columns: auto ;
   grid-gap: 10px;
-  /* margin-top: 125px; */
 }
-/* this was the old way
-.photo-grid {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 5px 5px;
-  height: 100%;
-  width: 100%;
-} */
-
 .my-art{
 	display: block;
 	margin: auto;
@@ -277,25 +193,23 @@ footer p{
 .photo-cell img {
 	width: 98%;
   height: 98%;
-  	display: block;
-  	box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+  display: block;
+  box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
 }
-
 .photo-caption {
   padding: 10px;
 }
-
-#subHead {
+.subHead {
   text-align: center;
   font-size: 1em;
   margin-bottom: 50px;
+  text-decoration-color: #418B80;
 }
 
 /*-----ABOUT PAGE ------*/
 .colorBar{
   background-color: #418B80;
 }
-
 .resume-section-top{
   margin-top: 15em;
 }
