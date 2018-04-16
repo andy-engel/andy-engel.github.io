@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("images/tic-tac-toe.png");
+  background-image: url("../images/tic-tac-toe.png");
 }
 
 h1 {
@@ -13,7 +13,7 @@ h1 {
 
 .art-wrapper {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: auto auto;
   /* grid-gap: 50px; */
   /* width: 100vw; */
 }
@@ -27,7 +27,7 @@ img {
   padding: 5%;
   display: inline-block;
   height: auto;
-  width: 40vw;
+  width: 44vw;
 }
 
 .button {
