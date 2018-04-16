@@ -3,19 +3,23 @@
   padding: 0;
 }
 
+body {
+  background-image: url("images/tic-tac-toe.png");
+}
 
 h1 {
   font-size: 36pt;
 }
 
-/* section {
-  display: inline;
-} */
-
 .art-wrapper {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 0px;
+  grid-template-columns: 50% 50%;
+  /* grid-gap: 50px; */
+  /* width: 100vw; */
+}
+
+.photo-cell {
+  margin-right: 0px;
 }
 
 img {
@@ -23,7 +27,7 @@ img {
   padding: 5%;
   display: inline-block;
   height: auto;
-  width: auto;
+  width: 40vw;
 }
 
 .button {
