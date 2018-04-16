@@ -2,18 +2,42 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Title</title>
+<link rel="stylesheet" type="text/css" href="css/examStyles.css">
+<title>Andy Engel's SI539 Exam</title>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
+  $(document).ready(function(){
+      $('#hideBTN').click(function(){
+        $('#item1').hide();
+    });
 
+    $('#showBTN').click(function(){
+      $('#item1').show();
+    });
+  });
 </script>
 
 </head>
 
 <body>
 <h1>Andy Engel</h1>
+  <section class="mainContent">
+    <div class="art-wrapper">
+      <div class="photo-cell" id="item1">
+        <img src="images/examPic.JPG" alt="this is a funny pic from vacation">
+      </div>
+      <div class="photo-cell" id="image2">
+        <img src="images/UMSI-logo.jpg" alt="UMSI logo">
+      </div>
+
+  </section>
+  <div>
+    <input class="button" value = "Hide Image" id="hideBTN">
+    <input class="button" value="Show Image" id="showBTN">
+  </div>
+
 </body>
 
 </html>

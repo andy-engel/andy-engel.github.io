@@ -1,3 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
 h1 {
   font-size: 36pt;
+}
+
+/* section {
+  display: inline;
+} */
+
+.art-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0px;
+}
+
+img {
+  border: 5px solid blue;
+  padding: 5%;
+  display: inline-block;
+  height: auto;
+  width: auto;
+}
+
+.button {
+    background-color: lightgray;
+    border: black;
+    color: black;
+    padding: 5px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
