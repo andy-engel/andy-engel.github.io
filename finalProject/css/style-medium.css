@@ -1,0 +1,49 @@
+@media only screen and (min-width: 650px) {
+
+  .art-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+  }
+
+  /*-----MAIN-----*/
+
+
+  /*-----HEADER & NAVIGATION-----*/
+
+
+  /*mobile-first*/
+  .top-nav ul li, .menu-icon{
+  	border-top: 1px solid #DDDDDA;
+    display: inline-block;
+  }
+
+  /*-----LOGO-----*/
+
+
+  /*-----FOOTER-----*/
+
+
+
+  /*-----HOMEPAGE-----*/
+
+.main-section{
+      margin-top: 10em;
+      margin-bottom: 5em;
+  }
+  .main-image{
+    background-image: url("../img/bgMedium.jpg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+  }
+
+  /*-----ABOUT PAGE ------*/
+  .resume-section-top{
+    margin-top: 10em;
+  }
+
+  .resume-section{
+    margin-top: 3em;
+  }
+
+  /*-----CONTACTS PAGE ------*/
