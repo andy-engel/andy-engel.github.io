@@ -22,38 +22,26 @@
 		<section>
 			<div class="main-text" >
 				<h2>Introduction</h2>
-				<p>For my final porject I performed an accessibilty audit on <a  href="">SITE NAME</a> using the <a href="http://accessibility.voxmedia.com/">Vox Product Accessibility Guidelines.</a> focusing on the "QA" role.</p>
-				<p>The audit is broken into two parts: 1) Guidelines Checklist, and 2) Suggestions.
+				<p>For my final porject I performed an accessibilty audit on <a  href="http://research.umich.edu/initiatives">U of M's Research Initiatives page</a> using the <a href="http://accessibility.voxmedia.com/">Vox Product Accessibility Guidelines.</a> focusing on the "QA" role.</p>
+				<p>The audit indicates how the site performs against the QA checklist (pass/fail) and gives suggestions about how to fix the errors and/or make improvements.
 			</div>
 			<div class="main-text2">
 				<h2>Guidelines Checklist</h2>
 				<h3>1. Run through each page with the WAVE Chrome Extension.</h3>
-				<p>#</p>
+				<p><em class="fail">Fail. </em>The page returns 11 errors from WAVE. The first nine images on the page need to have alt text added. Interestingly, the image at the bottom of the page isn't flagged by WAVE because it's alt text is empty likely because of the accompanying descriptive text in the "p" tag. While not critical, there are a number of alerts as well. First, the search button has been created in a fieldset, which needs a label. Second while the search button has been coded as a form element with a title it doesn't have a label. Devs should add a label. WAVE does indicate that the jumplink at the bottom of the page, which returns users to the top of the page, is a "broken same-page link". However, when tested with a mouse, the jumplink worked as expected.</p>
+				<p>There are contrast errors with the main topic images. Each topic has a heading, an image, and a "go" button, which is normally gray but turns blue with focus. Devs should increase the darkenss of the headings and button color when not in focus to improve color contrast.</p>
 				<h3>2. Users should be able to navigate through content using their keyboard.</h3>
-				<p>#</p>
+				<p><em class="pass">Pass. </em>The site is robust and easy to navigate using the keyboard.</p>
 				<h3>3. Users should be able to navigate content using a screen reader.</h3>
-				<p>#</p>
+				<p><em class="fail">Fail. </em>The eight main topic images on the page raise a concern about screen reader navigation. Users can easily navigate between "Go" buttons to view the topics represented by images,  all that gets read by the screen reader is the work "go". No other identifying content is presented. Devs should add alt text to the button so screen reader users know which topic they are choosing.</p>
 				<h3>4. The general architecture and hierarchy of the content should make sense.</h3>
-				<p>#</p>
+				<p><em class="pass">Pass. </em>HTML5 elements are well labeled and the site has a clear h1-h3 structure. The majority of the page content is in various lists and has a clear and easy to navitage structure.</p>
 				<h3>5. Charts and images should all have alt-text so that users with screen readers or users on a slow connection will still be able to understand the images.</h3>
-				<p>#</p>
+				<p><em class="fail">Fail. </em>See item 1 above.</p>
 				<h3>6. Decorative images should not be visible to screen readers.</h3>
-				<p>#</p>
+				<p><em class="fail">Fail. </em>All images on the page are treated as decorative images. Only two of the images, the first and the last, could be considered decorative. The eight main topic images could be decorative is the "go" buttons had additional information. If this option is picked, devs should set the "alt text" field on these eight images to "null" or "".</p>
 			</div>
-			<div class="main-text2">
-				<h2>Suggestions</h2>
-				<h3>1. #</h3>
-				<p>#</p>
-				<h3>2. #</h3>
-				<p>#</p>
-				<h3>3. #</h3>
-				<p>#</p>
-				<h3>4. #</h3>
-				<p>#</p>
-				<h3>5. #</h3>
-				<p>#</p>
-			</div>
-			<div class="main-text2">
+			<div>
 				<h2>Thanks!</h2>
 			</div>
 		</section>
